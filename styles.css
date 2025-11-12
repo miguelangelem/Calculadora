@@ -1,0 +1,80 @@
+/* Formato externo*/
+body{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Imagen de fondo */
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Formato interno*/
+#calculadora{
+    max-width: 360px;
+    background-color: rgb(24, 22, 22);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Formato display*/
+#display{
+    width: 100%;
+    height: 56px;
+    font-size:20px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(180, 176, 176);
+    background-color: rgba(13, 27, 42, 0.3);
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Formato operadores*/
+.operator{
+    color: #219ebc;
+}
+
+/* Formato boton limpiar*/
+.limpiar{
+    color: #219ebc;
+}
+
+/* Formato boton resultado*/
+.equal{
+    width: calc(50% - 10px);
+}
+
+/* Formato botones números*/
+button{
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    background-color: rgb(13, 27, 42);
+    color: #e0e1dd;
+    -webkit-box-shadow: -1px 1px 30px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 1px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Formato cursor sobre el botón*/
+button:hover{
+    cursor: pointer;
+}
+
+/* Formato botón seleccionado o activo*/
+button:active{
+    transform: scale(1.05);
+    box-shadow: 0 24px 4px 1px rgba(0, 0, 0, 0.19),
+    0 1.5px 1.5px rgba(0, 0, 0, 0.23);
+}
